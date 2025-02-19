@@ -1,1 +1,369 @@
 
+2025-02-20 04:23:34,202       total_runs
+ball            
+15            21
+16            14
+17            36
+18            20
+19            17
+2025-02-20 04:23:34,204      striker  ball  runs_off_bat
+0      A Nao    15             1
+1      A Nao    16             3
+2      A Nao    17             4
+3      A Nao    18             2
+4      A Nao    19             1
+5   CA Soper    15             1
+6   CA Soper    16             2
+7   CA Soper    17             4
+8   CA Soper    18             5
+9     H Hiri    15             4
+10  J Kariko    17             0
+11  J Kariko    18             4
+12  J Kariko    19             0
+13  K Doriga    15            12
+14  K Doriga    16             3
+15  K Doriga    17            14
+16  K Doriga    18             5
+17  K Doriga    19            11
+18  KV Morea    18             0
+19  KV Morea    19             2
+20   N Vanua    15             2
+21   N Vanua    16             3
+22   N Vanua    17            13
+23   N Vanua    18             1
+24   N Vanua    19             0
+25     S Bau    15             1
+26     S Bau    16             0
+27  SI Kamea    18             1
+28  SI Kamea    19             2
+2025-02-20 04:23:34,210 Succesfully pfound avg runs scored in death overs
+2025-02-20 04:23:34,210    runs  ball
+0     5    15
+1     3    16
+2     9    17
+3     5    18
+4     4    19
+2025-02-20 04:23:34,546 Plotting Data Succesfully
+2025-02-20 04:23:34,893       bowler  ...  wicket_type
+0     A Vala  ...            1
+1   CA Soper  ...            0
+2  CJA Amini  ...            0
+3   J Kariko  ...            0
+4   KV Morea  ...            0
+5    N Vanua  ...            1
+
+[6 rows x 8 columns]
+2025-02-20 04:23:34,900    ball  dot balls
+0    15   0.833333
+1    16   1.000000
+2    17   0.666667
+3    18   0.000000
+2025-02-20 04:23:34,995   wicket_type  count of dissmissal
+0      caught                    2
+2025-02-20 04:23:47,011       total_runs
+ball            
+15            21
+16            14
+17            36
+18            20
+19            17
+2025-02-20 04:23:47,016      striker  ball  runs_off_bat
+0      A Nao    15             1
+1      A Nao    16             3
+2      A Nao    17             4
+3      A Nao    18             2
+4      A Nao    19             1
+5   CA Soper    15             1
+6   CA Soper    16             2
+7   CA Soper    17             4
+8   CA Soper    18             5
+9     H Hiri    15             4
+10  J Kariko    17             0
+11  J Kariko    18             4
+12  J Kariko    19             0
+13  K Doriga    15            12
+14  K Doriga    16             3
+15  K Doriga    17            14
+16  K Doriga    18             5
+17  K Doriga    19            11
+18  KV Morea    18             0
+19  KV Morea    19             2
+20   N Vanua    15             2
+21   N Vanua    16             3
+22   N Vanua    17            13
+23   N Vanua    18             1
+24   N Vanua    19             0
+25     S Bau    15             1
+26     S Bau    16             0
+27  SI Kamea    18             1
+28  SI Kamea    19             2
+2025-02-20 04:23:47,024 Succesfully pfound avg runs scored in death overs
+2025-02-20 04:23:47,024    runs  ball
+0     5    15
+1     3    16
+2     9    17
+3     5    18
+4     4    19
+2025-02-20 04:23:47,065 Plotting Data Succesfully
+2025-02-20 04:23:47,163       bowler  ...  wicket_type
+0     A Vala  ...            1
+1   CA Soper  ...            0
+2  CJA Amini  ...            0
+3   J Kariko  ...            0
+4   KV Morea  ...            0
+5    N Vanua  ...            1
+
+[6 rows x 8 columns]
+2025-02-20 04:23:47,170    ball  dot balls
+0    15   0.833333
+1    16   1.000000
+2    17   0.666667
+3    18   0.000000
+2025-02-20 04:23:47,280   wicket_type  count of dissmissal
+0      caught                    2
+2025-02-20 04:24:16,445       total_runs
+ball            
+15            21
+16            14
+17            36
+18            20
+19            17
+2025-02-20 04:24:16,447      striker  ball  runs_off_bat
+0      A Nao    15             1
+1      A Nao    16             3
+2      A Nao    17             4
+3      A Nao    18             2
+4      A Nao    19             1
+5   CA Soper    15             1
+6   CA Soper    16             2
+7   CA Soper    17             4
+8   CA Soper    18             5
+9     H Hiri    15             4
+10  J Kariko    17             0
+11  J Kariko    18             4
+12  J Kariko    19             0
+13  K Doriga    15            12
+14  K Doriga    16             3
+15  K Doriga    17            14
+16  K Doriga    18             5
+17  K Doriga    19            11
+18  KV Morea    18             0
+19  KV Morea    19             2
+20   N Vanua    15             2
+21   N Vanua    16             3
+22   N Vanua    17            13
+23   N Vanua    18             1
+24   N Vanua    19             0
+25     S Bau    15             1
+26     S Bau    16             0
+27  SI Kamea    18             1
+28  SI Kamea    19             2
+2025-02-20 04:24:16,456 Succesfully pfound avg runs scored in death overs
+2025-02-20 04:24:16,456    runs  ball
+0     5    15
+1     3    16
+2     9    17
+3     5    18
+4     4    19
+2025-02-20 04:24:16,492 Plotting Data Succesfully
+2025-02-20 04:24:16,582       bowler  ...  wicket_type
+0     A Vala  ...            1
+1   CA Soper  ...            0
+2  CJA Amini  ...            0
+3   J Kariko  ...            0
+4   KV Morea  ...            0
+5    N Vanua  ...            1
+
+[6 rows x 8 columns]
+2025-02-20 04:24:16,589    ball  dot balls
+0    15   0.833333
+1    16   1.000000
+2    17   0.666667
+3    18   0.000000
+2025-02-20 04:24:16,687   wicket_type  count of dissmissal
+0      caught                    2
+2025-02-20 04:24:18,401       total_runs
+ball            
+15            38
+16            18
+17            14
+18            21
+19            40
+2025-02-20 04:24:18,402            striker  ball  runs_off_bat
+0       D Heyliger    16             1
+1       D Heyliger    17             2
+2       D Heyliger    18             5
+3       D Heyliger    19             2
+4         DS Bajwa    17             0
+5         DS Bajwa    18            11
+6      Kaleem Sana    15             2
+7      Kaleem Sana    16             1
+8      Kaleem Sana    17             1
+9      Kaleem Sana    18             0
+10     Kaleem Sana    19             8
+11       NR Kirton    15            23
+12       NR Kirton    16            12
+13       NR Kirton    17             3
+14       NR Kirton    18             1
+15         S Movva    15             7
+16         S Movva    16             3
+17         S Movva    17             5
+18         S Movva    18             4
+19         S Movva    19            27
+20  Saad Bin Zafar    15             5
+21  Saad Bin Zafar    16             1
+22  Saad Bin Zafar    19             1
+2025-02-20 04:24:18,415 Succesfully pfound avg runs scored in death overs
+2025-02-20 04:24:18,415    runs  ball
+0    12    15
+1     6    16
+2     4    17
+3     7    18
+4    13    19
+2025-02-20 04:24:18,451 Plotting Data Succesfully
+2025-02-20 04:24:18,543             bowler  ...  wicket_type
+0       D Heyliger  ...            0
+1       JOA Gordon  ...            2
+2  Junaid Siddiqui  ...            0
+3      Kaleem Sana  ...            0
+4          N Dutta  ...            1
+
+[5 rows x 8 columns]
+2025-02-20 04:24:18,550    ball  dot balls
+0    15       1.00
+1    16       0.75
+2    17       1.00
+3    18       0.00
+4    19       0.50
+2025-02-20 04:24:18,637          wicket_type  count of dissmissal
+0             caught                    2
+1  caught and bowled                    1
+2025-02-20 04:24:33,464       total_runs
+ball            
+15            21
+16            14
+17            36
+18            20
+19            17
+2025-02-20 04:24:33,465      striker  ball  runs_off_bat
+0      A Nao    15             1
+1      A Nao    16             3
+2      A Nao    17             4
+3      A Nao    18             2
+4      A Nao    19             1
+5   CA Soper    15             1
+6   CA Soper    16             2
+7   CA Soper    17             4
+8   CA Soper    18             5
+9     H Hiri    15             4
+10  J Kariko    17             0
+11  J Kariko    18             4
+12  J Kariko    19             0
+13  K Doriga    15            12
+14  K Doriga    16             3
+15  K Doriga    17            14
+16  K Doriga    18             5
+17  K Doriga    19            11
+18  KV Morea    18             0
+19  KV Morea    19             2
+20   N Vanua    15             2
+21   N Vanua    16             3
+22   N Vanua    17            13
+23   N Vanua    18             1
+24   N Vanua    19             0
+25     S Bau    15             1
+26     S Bau    16             0
+27  SI Kamea    18             1
+28  SI Kamea    19             2
+2025-02-20 04:24:33,473 Succesfully pfound avg runs scored in death overs
+2025-02-20 04:24:33,473    runs  ball
+0     5    15
+1     3    16
+2     9    17
+3     5    18
+4     4    19
+2025-02-20 04:24:33,518 Plotting Data Succesfully
+2025-02-20 04:24:33,611       bowler  ...  wicket_type
+0     A Vala  ...            1
+1   CA Soper  ...            0
+2  CJA Amini  ...            0
+3   J Kariko  ...            0
+4   KV Morea  ...            0
+5    N Vanua  ...            1
+
+[6 rows x 8 columns]
+2025-02-20 04:24:33,618    ball  dot balls
+0    15   0.833333
+1    16   1.000000
+2    17   0.666667
+3    18   0.000000
+2025-02-20 04:24:33,713   wicket_type  count of dissmissal
+0      caught                    2
+2025-02-20 04:24:37,470       total_runs
+ball            
+15            35
+16            21
+17            22
+18            29
+19            21
+2025-02-20 04:24:37,472                 striker  ball  runs_off_bat
+0          Abbas Afridi    15             8
+1          Abbas Afridi    16             2
+2          Abbas Afridi    17             1
+3            Babar Azam    15             8
+4            Babar Azam    16             1
+5            Babar Azam    17             1
+6            Babar Azam    18             2
+7          Fakhar Zaman    15             1
+8          Fakhar Zaman    16             2
+9          Fakhar Zaman    17             0
+10           Haris Rauf    18             2
+11           Haris Rauf    19             1
+12       Iftikhar Ahmed    15             5
+13       Iftikhar Ahmed    16             6
+14       Iftikhar Ahmed    17             6
+15       Iftikhar Ahmed    18             0
+16           Imad Wasim    15             1
+17           Imad Wasim    16             2
+18           Imad Wasim    17             3
+19           Imad Wasim    18             2
+20           Imad Wasim    19             0
+21      Mohammad Rizwan    15            10
+22      Mohammad Rizwan    16             5
+23      Mohammad Rizwan    17             1
+24          Naseem Shah    19            10
+25          Shadab Khan    15             1
+26          Shadab Khan    16             2
+27  Shaheen Shah Afridi    15             1
+28  Shaheen Shah Afridi    16             1
+29  Shaheen Shah Afridi    17             5
+30  Shaheen Shah Afridi    18            21
+31  Shaheen Shah Afridi    19             8
+32           Usman Khan    17             2
+2025-02-20 04:24:37,480 Succesfully pfound avg runs scored in death overs
+2025-02-20 04:24:37,480    runs  ball
+0     8    15
+1     5    16
+2     5    17
+3     7    18
+4     5    19
+2025-02-20 04:24:37,516 Plotting Data Succesfully
+2025-02-20 04:24:37,607                 bowler  ...  wicket_type
+0         Abbas Afridi  ...            0
+1           Haris Rauf  ...            2
+2           Imad Wasim  ...            0
+3        Mohammad Amir  ...            1
+4          Naseem Shah  ...            0
+5          Shadab Khan  ...            0
+6  Shaheen Shah Afridi  ...            0
+
+[7 rows x 8 columns]
+2025-02-20 04:24:37,614    ball  dot balls
+0    15   0.555556
+1    16   1.000000
+2    17   0.666667
+3    18   0.777778
+4    19   0.000000
+2025-02-20 04:24:37,703   wicket_type  count of dissmissal
+0      caught                    3
+1     run out                    1
