@@ -1,12 +1,31 @@
+"""
+T20 World Cup Death Overs Performance Dashboard  
+-------------------------------------------------
+Author: Harjas Bajwa  
+Date: February 20, 2025  
+License: Nil 
+-------------------------------------------------
+Description:  
+This Streamlit-based dashboard analyzes team and player performances in the  
+death overs (16-20) of the T20 World Cup.  
+
+Features:  
+- Bowling Performance Analysis: Dot ball progression in last 5 overs, wicket takers comparasion in last 5 overs, split of types of wickets in last 5 overs.  
+- Batting Insights: Runs scored Vs Wickets fallen in last 5 overs, phase wise innings progression in in last 5 overs, total runs scored by each batsmen in last 5 overs.  
+- Visualizations: Charts - bar,line,pie | heatmaps.  
+- Interactive Filtering: Allows filtering by teams.  
+
+This script utilizes Pandas, plotly , sckitlearn and Streamlit for data processing  
+and visualization.  
+"""
+
 import streamlit as st
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
 import logging
 from sklearn.preprocessing import MinMaxScaler
 import plotly.express as px
-import numpy as np
+
 
 logging.basicConfig(filename='system.log',format='%(asctime)s %(message)s',filemode='a')
 logger = logging.getLogger()
@@ -47,10 +66,10 @@ def total_matches_played(team):
         bowling_stats=data[((data['bowling_team']==team))&(data['ball']>15.0)&(data['ball']<=20.0)]
         bowling_death_count = len(bowling_stats['match_id'].unique())
         st.subheader(f"Total Matches Bowled In Death: {bowling_death_count}")
-        logger_success.info("Succesfully fetched total number of matches played and number of times bowled in death for ",team)
+        logger_success.info(f"Succesfully fetched total number of matches played and number of times bowled in death for {team}")
     except:
-        logger.error("Cannot fetch total number of matches for ", team)
-        logger.error("Cannot fetch total number of times bowled in death for ", team)
+        logger.error(f"Cannot fetch total number of matches for {team}")
+        logger.error(f"Cannot fetch total number of times bowled in death for {team}")
 
 total_matches_played(team)
 
@@ -61,24 +80,23 @@ def total_matches_played_batting(team):
     try:
         batting_stats=data[((data['batting_team']==team))&(data['ball']>15.0)&(data['ball']<=20.0)]
         total_matches = len(batting_stats['match_id'].unique())
-        logger_success.info("Succesfully fetched total number of times batted in death for ",team)
+        logger_success.info(f"Succesfully fetched total number of times batted in death for {team}")
         
         return total_matches
     except:
         
-        logger.error("Error fetching total number of times batted in death for ",team)
+        logger.error(f"Error fetching total number of times batted in death for {team}")
         return "No Data Found"
 
-total_matches = total_matches_played_batting(team) #fetches total matches played by each team
+total_matches = total_matches_played_batting(team) #fetches total matches batted in death
 st.subheader(f"Total Matches Batted in Death: {total_matches}")
 
 def batting_wickets_fallen(team):
     
     batting_stats=data[((data['batting_team']==team))&(data['ball']>15.0)&(data['ball']<=20.0)]
-    logger.info("Data Parsed Succesfully For ",team)
+    logger.info(f"Data Parsed Succesfully For {team}")
         
-    #wickets_fallen=batting_stats.agg({'wicket_type':lambda x:x.notnull()})
-    #st.write(wickets_fallen)
+    
     return batting_stats
     
         
@@ -89,12 +107,10 @@ def batting_runs_scored(team): #method to find runs scored in each over
         batting_stats['total_runs'] = batting_stats['runs_off_bat'] + batting_stats['extras']
         batting_stats=batting_stats[['batting_team','ball','total_runs']]
         batting_stats=batting_stats.groupby('ball').agg({'total_runs':'sum'})
-        #wickets_fallen=batting_stats.agg({'wicket_type':lambda x:x.notnull()})
-        #st.write(wickets_fallen)
-        logger_success.info("Data Parsed Succesfully for ", team)
+        logger_success.info(f"Succesfully found out out total runs scored in each over {team}")
         return batting_stats
     except:
-        logger.error("Cannot find specified team ",team)
+        logger.error(f"Cannot find specified team {team}")
     
         
 try:
@@ -109,11 +125,10 @@ try:
         batsmen_data=batsmen_data[['striker','ball','runs_off_bat']]
         batsmen_data = batsmen_data.groupby(['striker','ball'])['runs_off_bat'].sum().reset_index()
         batsmen_heatmap_data = batsmen_data.pivot(index='striker',columns='ball',values='runs_off_bat').fillna(0)
-        logger_success.info("data for runs scored by each batsmen parsed successful! for ",team)
-        logger_success.info(runs_scored)
-        logger_success.info(batsmen_data)
+        logger_success.info(f"data for runs scored by each batsmen parsed successful! for {team}")
+        
     except:
-        logger.error("Error fetching runs scored by each batsmen ",team)
+        logger.error(f"Error fetching runs scored by each batsmen {team}")
 
     #finding out total runs in each over by team against wickets fallen
     try:
@@ -123,10 +138,10 @@ try:
         batting_plot=batting_plot.groupby('ball').agg({'wicket_type':lambda x:x.notnull().sum()})
         batting_plot['runs']=runs_scored['total_runs']
         batting_plot = batting_plot.reset_index()
-        logger_success("Parsed Data Succesfully for runs scored in each over and wickets fallen for", team)
-        logger_success.info(batting_plot)
+        logger_success(f"Parsed Data Succesfully for runs scored in each over and wickets fallen for {team}")
+        
     except:
-        logger.error("Error fetching runs scored in each over and wickets fallen for", team)
+        logger.error(f"Error fetching runs scored in each over and wickets fallen for {team}")
 
     # Finding out AVG in death overs
     try:
@@ -134,11 +149,11 @@ try:
         
         avg_runs_scored['runs'] = avg_runs_scored['runs'] // total_matches
         avg_runs_scored.reset_index()
-        logger_success.info("Succesfully pfound avg runs scored in death overs")
-        logger_success.info(avg_runs_scored)
+        logger_success.info("Succesfully found avg runs scored in death overs")
+        
         
     except:
-        logger.error("Error fetching avg runs in death for " ,team)
+        logger.error(f"Error fetching avg runs in death for {team}")
     #Plotting Data
     try:
         fig = px.box(avg_runs_scored,x='ball',y='runs',title="Phase wise Runs")
@@ -149,7 +164,7 @@ try:
                         title='Heatmap of Runs Scored by batsmen')
         logger_success.info("Plotting Data Succesfully")
     except:
-        logger.error("Plotting Failed this might be due to no data available for " ,team)
+        logger.error(f"Plotting Failed this might be due to no data available for {team}")
 
 
 
@@ -175,14 +190,15 @@ try:
             total_bowlers = len(wickets_taken['bowler'])
             st.write("**Wickets Taken in Death Overs by Bowlers**")
             st.bar_chart(data = wickets_taken, x = 'bowler',y = 'wicket_type', x_label = "Bowler", y_label = "Total Number Of Wickets Taken",color = colors[total_bowlers-1],use_container_width = True)
-            logger_success.info("Data Parsed Successfully for wicket taken by each bowler for ",team)
-            logger_success.info(wickets_taken)
+            logger_success.info(f"Data Parsed Successfully for wicket taken by each bowler for {team}")
+            
             
         except:
-            logger.error("No data found ",team)
+            logger.error(f"No data found for wickets taken by each bowler{team}")
             logger.error("Plotting failed for wicket taken by each bowler(bar chart) for ",team)
     
     def bowling_dot_balls(team):
+        #function to find out dot balls bowled and plot the graph for it 
         try:
             bowling_stats = data[((data['bowling_team']==team))&(data['ball']>15.0)&(data['ball']<20.0)&(data['runs_off_bat']==0)&(data['extras']==0)]
             bowling_stats = bowling_stats.reset_index()
@@ -191,18 +207,31 @@ try:
             bowling_stats['ball'] = bowling_stats['ball'].astype(int)
             bowling_stats = bowling_stats.groupby('ball').agg({'runs_off_bat':'count'})
             bowling_stats = bowling_stats.reset_index()
+
+            # filling missing data with 0
+            if 15 not in bowling_stats['ball'].values:
+                bowling_stats.loc[len(bowling_stats.index)] = [15,0]
+            if 16 not in bowling_stats['ball'].values:
+                bowling_stats.loc[len(bowling_stats.index)] = [16,1]
+            if 17 not in bowling_stats['ball'].values:
+                bowling_stats.loc[len(bowling_stats.index)] = [17,2]
+            if 18 not in bowling_stats['ball'].values:
+                bowling_stats.loc[len(bowling_stats.index)] = [18,3] 
+            if 19 not in bowling_stats['ball'].values:
+                bowling_stats.loc[len(bowling_stats.index)] = [19,4]
+            bowling_stats['runs_off_bat']=bowling_stats['runs_off_bat'].fillna(0)  
+            
             bowling_stats = bowling_stats.rename(columns={'runs_off_bat':'dot balls'})
-            bowling_stats[['dot balls']] = scaler.fit_transform(bowling_stats[['dot balls']])
-            logger_success.info("Succesfuuly found total number of dot balls for ",team)
-            logger_success.info(bowling_stats)
-            logger_success.info("Data plotting successful for dot balls for ",team)
+            bowling_stats[['dot balls']] = scaler.fit_transform(bowling_stats[['dot balls']]) #normalizing data to fit the curve
+            logger_success.info(f"Succesfuuly found total number of dot balls for {team}")
+            logger_success.info(f"Data plotting successful for dot balls for {team}")
             st.write("**Total Number of Dot Balls in Death Overs**")
             st.line_chart(data=bowling_stats, x = 'ball', y='dot balls', use_container_width = True, color = '#78eef5')
 
             
         except:
-            logger.error("No data found ",team)
-            logger.error("Plotting failed for dot ball progression(line chart) for ",team)
+            logger.error(f"No data found for dot bowls bowled by {team}")
+            logger.error(f"Plotting failed for dot ball progression(line chart) for {team}")
     
     def wicket_type_split(team):
         try:
@@ -210,36 +239,30 @@ try:
                      (data['ball'] > 15.0) & 
                      (data['ball'] < 20.0) & 
                      data['wicket_type'].notnull()]
-            logger_success.info("Succesfully found split of wickets for ",team)
+            logger_success.info(f"Succesfully found split of wickets for {team}")
             bowling_stats = bowling_stats[['wicket_type','player_dismissed']]
             bowling_stats = bowling_stats.reset_index()
             bowling_stats = bowling_stats.groupby('wicket_type').agg({'player_dismissed': 'count'}).reset_index()
             bowling_stats = bowling_stats.rename(columns={'player_dismissed':'count of dissmissal'})
-            #st.write(bowling_stats['count of dismissal'].dtype())
-
-            #count = bowling_stats.value_counts().reset_index()
-            #count.columns = ['wicket_type','count']
-            logger_success.info(bowling_stats)
-            logger_success.info("Data plotting succesful for wicket split for ",team)
+            logger_success.info(f"Data plotting succesful for wicket split for {team}")
             wicket_split = px.pie(bowling_stats, values = 'count of dissmissal', names = 'wicket_type', title = 'Wicket Type Split', hole = 0.3,)
             wicket_split.update_traces(textposition='inside', textinfo='label', marker=dict(line=dict(color="black", width=2)))
             st.plotly_chart(wicket_split,use_container_width = True)
 
         except:
-            logger.error("No data found for ",team)
-            logger.error("Plotting failed for wicket split(Pie Chart) ",team)
+            logger.error(f"No data found for wickets split of {team}")
+            logger.error(f"Plotting failed for wicket split(Pie Chart) of {team}")
 
-    with col2:
+    with col2: #ALL BOWLING VISULIZATION GOES HERE
         bowling_wickets(team)
         bowling_dot_balls(team)
         wicket_type_split(team)
         
 
         
-        # st.write("**Total Runs Scored**")
-        #st.line_chart(runs_scored,x='ball',y='total_runs',x_label='overs',y_label='wickets fallen',color='#FF0000')
+        
 except:
-    st.write("No Data Available")  # Display a message if no data is available
+    st.write("No Data Available")  # Display a message if no data is available or any syntax error 
     logger.error("Failed to fetch data")
 
 st.page_link("pages/logs.py", label="View Logs")

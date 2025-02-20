@@ -367,3 +367,294 @@ ball
 2025-02-20 04:24:37,703   wicket_type  count of dissmissal
 0      caught                    3
 1     run out                    1
+2025-02-20 14:20:21,021       total_runs
+ball            
+15            21
+16            14
+17            36
+18            20
+19            17
+2025-02-20 14:20:21,023      striker  ball  runs_off_bat
+0      A Nao    15             1
+1      A Nao    16             3
+2      A Nao    17             4
+3      A Nao    18             2
+4      A Nao    19             1
+5   CA Soper    15             1
+6   CA Soper    16             2
+7   CA Soper    17             4
+8   CA Soper    18             5
+9     H Hiri    15             4
+10  J Kariko    17             0
+11  J Kariko    18             4
+12  J Kariko    19             0
+13  K Doriga    15            12
+14  K Doriga    16             3
+15  K Doriga    17            14
+16  K Doriga    18             5
+17  K Doriga    19            11
+18  KV Morea    18             0
+19  KV Morea    19             2
+20   N Vanua    15             2
+21   N Vanua    16             3
+22   N Vanua    17            13
+23   N Vanua    18             1
+24   N Vanua    19             0
+25     S Bau    15             1
+26     S Bau    16             0
+27  SI Kamea    18             1
+28  SI Kamea    19             2
+2025-02-20 14:20:21,030 Succesfully pfound avg runs scored in death overs
+2025-02-20 14:20:21,030    runs  ball
+0     5    15
+1     3    16
+2     9    17
+3     5    18
+4     4    19
+2025-02-20 14:20:21,472 Plotting Data Succesfully
+2025-02-20 14:20:21,822       bowler  match_id  ball  runs_off_bat  extras  wides  noballs  wicket_type
+0     A Vala         1    12            21       0    0.0      0.0            1
+1   CA Soper         2     7             8       0    0.0      0.0            0
+2  CJA Amini         1     2             2       0    0.0      0.0            0
+3   J Kariko         1     6             9       0    0.0      0.0            0
+4   KV Morea         1     6            13       0    0.0      0.0            0
+5    N Vanua         1    15             6       3    3.0      0.0            1
+2025-02-20 14:20:21,830    ball  dot balls
+0    15   0.833333
+1    16   1.000000
+2    17   0.666667
+3    18   0.000000
+4    19   0.500000
+2025-02-20 14:20:21,918   wicket_type  count of dissmissal
+0      caught                    2
+2025-02-20 14:20:29,462       total_runs
+ball            
+15            21
+16            14
+17            36
+18            20
+19            17
+2025-02-20 14:20:29,463      striker  ball  runs_off_bat
+0      A Nao    15             1
+1      A Nao    16             3
+2      A Nao    17             4
+3      A Nao    18             2
+4      A Nao    19             1
+5   CA Soper    15             1
+6   CA Soper    16             2
+7   CA Soper    17             4
+8   CA Soper    18             5
+9     H Hiri    15             4
+10  J Kariko    17             0
+11  J Kariko    18             4
+12  J Kariko    19             0
+13  K Doriga    15            12
+14  K Doriga    16             3
+15  K Doriga    17            14
+16  K Doriga    18             5
+17  K Doriga    19            11
+18  KV Morea    18             0
+19  KV Morea    19             2
+20   N Vanua    15             2
+21   N Vanua    16             3
+22   N Vanua    17            13
+23   N Vanua    18             1
+24   N Vanua    19             0
+25     S Bau    15             1
+26     S Bau    16             0
+27  SI Kamea    18             1
+28  SI Kamea    19             2
+2025-02-20 14:20:29,469 Succesfully pfound avg runs scored in death overs
+2025-02-20 14:20:29,469    runs  ball
+0     5    15
+1     3    16
+2     9    17
+3     5    18
+4     4    19
+2025-02-20 14:20:29,543 Plotting Data Succesfully
+2025-02-20 14:20:29,638       bowler  match_id  ball  runs_off_bat  extras  wides  noballs  wicket_type
+0     A Vala         1    12            21       0    0.0      0.0            1
+1   CA Soper         2     7             8       0    0.0      0.0            0
+2  CJA Amini         1     2             2       0    0.0      0.0            0
+3   J Kariko         1     6             9       0    0.0      0.0            0
+4   KV Morea         1     6            13       0    0.0      0.0            0
+5    N Vanua         1    15             6       3    3.0      0.0            1
+2025-02-20 14:20:29,646    ball  dot balls
+0    15   0.833333
+1    16   1.000000
+2    17   0.666667
+3    18   0.000000
+4    19   0.500000
+2025-02-20 14:20:29,759   wicket_type  count of dissmissal
+0      caught                    2
+2025-02-20 14:20:40,580       total_runs
+ball            
+15            18
+16            23
+17            25
+18            15
+19             9
+2025-02-20 14:20:40,582           striker  ball  runs_off_bat
+0      CN Greaves    16             1
+1      CN Greaves    17             5
+2      CN Greaves    18             6
+3      CN Greaves    19             1
+4        MA Leask    15             2
+5        MA Leask    16            15
+6        MA Leask    17             9
+7   RD Berrington    15            15
+8   RD Berrington    16             6
+9   RD Berrington    17            10
+10  RD Berrington    18             8
+11  RD Berrington    19             5
+2025-02-20 14:20:40,589 Succesfully pfound avg runs scored in death overs
+2025-02-20 14:20:40,589    runs  ball
+0     9    15
+1    11    16
+2    12    17
+3     7    18
+4     4    19
+2025-02-20 14:20:40,630 Plotting Data Succesfully
+2025-02-20 14:20:40,720        bowler  match_id  ball  runs_off_bat  extras  wides  noballs  wicket_type
+0   BJ Currie         1     6             3       0    0.0      0.0            1
+1   BTJ Wheal         3    27            38       4    0.0      0.0            3
+2     CB Sole         1     6             9       0    0.0      0.0            0
+3  CN Greaves         2    12            10       1    0.0      0.0            1
+4    MRJ Watt         2    13            22       1    1.0      0.0            1
+5   SM Sharif         2    26            52       3    2.0      0.0            2
+2025-02-20 14:20:40,728    ball  dot balls
+0    15   1.000000
+1    16   0.000000
+2    17   0.333333
+3    18   1.000000
+4    19   0.000000
+2025-02-20 14:20:40,824   wicket_type  count of dissmissal
+0      bowled                    1
+1      caught                    7
+2     run out                    1
+2025-02-20 14:28:55,405 Succesfully pfound avg runs scored in death overs
+2025-02-20 14:28:55,441 Plotting Data Succesfully
+2025-02-20 14:28:55,530        bowler  match_id  ball  ...  wides  noballs  wicket_type
+0   BJ Currie         1     6  ...    0.0      0.0            1
+1   BTJ Wheal         3    27  ...    0.0      0.0            3
+2     CB Sole         1     6  ...    0.0      0.0            0
+3  CN Greaves         2    12  ...    0.0      0.0            1
+4    MRJ Watt         2    13  ...    1.0      0.0            1
+5   SM Sharif         2    26  ...    2.0      0.0            2
+
+[6 rows x 8 columns]
+2025-02-20 14:28:55,608   wicket_type  count of dissmissal
+0      bowled                    1
+1      caught                    7
+2     run out                    1
+2025-02-20 14:29:00,934 Succesfully pfound avg runs scored in death overs
+2025-02-20 14:29:00,970 Plotting Data Succesfully
+2025-02-20 14:29:01,060             bowler  match_id  ...  noballs  wicket_type
+0       D Heyliger         2  ...      0.0            0
+1       JOA Gordon         2  ...      0.0            2
+2  Junaid Siddiqui         2  ...      0.0            0
+3      Kaleem Sana         2  ...      0.0            0
+4          N Dutta         1  ...      0.0            1
+
+[5 rows x 8 columns]
+2025-02-20 14:29:01,151          wicket_type  count of dissmissal
+0             caught                    2
+1  caught and bowled                    1
+2025-02-20 14:29:23,284 Succesfully pfound avg runs scored in death overs
+2025-02-20 14:29:23,320 Plotting Data Succesfully
+2025-02-20 14:29:23,410       bowler  match_id  ball  ...  wides  noballs  wicket_type
+0     A Vala         1    12  ...    0.0      0.0            1
+1   CA Soper         2     7  ...    0.0      0.0            0
+2  CJA Amini         1     2  ...    0.0      0.0            0
+3   J Kariko         1     6  ...    0.0      0.0            0
+4   KV Morea         1     6  ...    0.0      0.0            0
+5    N Vanua         1    15  ...    3.0      0.0            1
+
+[6 rows x 8 columns]
+2025-02-20 14:29:23,513   wicket_type  count of dissmissal
+0      caught                    2
+2025-02-20 14:29:37,584 Succesfully pfound avg runs scored in death overs
+2025-02-20 14:29:37,620 Plotting Data Succesfully
+2025-02-20 14:29:37,711       bowler  match_id  ball  ...  wides  noballs  wicket_type
+0     A Vala         1    12  ...    0.0      0.0            1
+1   CA Soper         2     7  ...    0.0      0.0            0
+2  CJA Amini         1     2  ...    0.0      0.0            0
+3   J Kariko         1     6  ...    0.0      0.0            0
+4   KV Morea         1     6  ...    0.0      0.0            0
+5    N Vanua         1    15  ...    3.0      0.0            1
+
+[6 rows x 8 columns]
+2025-02-20 14:29:37,808   wicket_type  count of dissmissal
+0      caught                    2
+2025-02-20 14:34:06,623 Succesfully pfound avg runs scored in death overs
+2025-02-20 14:34:06,657 Plotting Data Succesfully
+2025-02-20 14:34:12,319 Succesfully pfound avg runs scored in death overs
+2025-02-20 14:34:12,357 Plotting Data Succesfully
+2025-02-20 14:40:40,325 Succesfully fetched total number of matches played and number of times bowled in death for Papua New Guinea
+2025-02-20 14:40:40,326 Succesfully fetched total number of times batted in death for Papua New Guinea
+2025-02-20 14:40:40,329 Succesfully found out out total runs scored in each over Papua New Guinea
+2025-02-20 14:40:40,330 Data Parsed Succesfully For Papua New Guinea
+2025-02-20 14:40:40,332 data for runs scored by each batsmen parsed successful! for Papua New Guinea
+2025-02-20 14:40:40,333 Data Parsed Succesfully For Papua New Guinea
+2025-02-20 14:40:40,336 Succesfully pfound avg runs scored in death overs
+2025-02-20 14:40:40,379 Plotting Data Succesfully
+2025-02-20 14:40:40,470 Data Parsed Successfully for wicket taken by each bowler for Papua New Guinea
+2025-02-20 14:40:40,473 Succesfuuly found total number of dot balls for Papua New Guinea
+2025-02-20 14:40:40,473 Data plotting successful for dot balls for Papua New Guinea
+2025-02-20 14:40:40,559 Succesfully found split of wickets for Papua New Guinea
+2025-02-20 14:40:40,560 Data plotting succesful for wicket split for Papua New Guinea
+2025-02-20 14:40:42,995 Succesfully fetched total number of matches played and number of times bowled in death for Namibia
+2025-02-20 14:40:42,997 Succesfully fetched total number of times batted in death for Namibia
+2025-02-20 14:40:43,002 Succesfully found out out total runs scored in each over Namibia
+2025-02-20 14:40:43,003 Data Parsed Succesfully For Namibia
+2025-02-20 14:40:43,005 data for runs scored by each batsmen parsed successful! for Namibia
+2025-02-20 14:40:43,006 Data Parsed Succesfully For Namibia
+2025-02-20 14:40:43,011 Succesfully pfound avg runs scored in death overs
+2025-02-20 14:40:43,050 Plotting Data Succesfully
+2025-02-20 14:40:43,140 Data Parsed Successfully for wicket taken by each bowler for Namibia
+2025-02-20 14:40:43,143 Succesfuuly found total number of dot balls for Namibia
+2025-02-20 14:40:43,143 Data plotting successful for dot balls for Namibia
+2025-02-20 14:40:43,225 Succesfully found split of wickets for Namibia
+2025-02-20 14:40:43,227 Data plotting succesful for wicket split for Namibia
+2025-02-20 15:02:44,053 Succesfully fetched total number of matches played and number of times bowled in death for Papua New Guinea
+2025-02-20 15:02:44,055 Succesfully fetched total number of times batted in death for Papua New Guinea
+2025-02-20 15:02:44,058 Succesfully found out out total runs scored in each over Papua New Guinea
+2025-02-20 15:02:44,059 Data Parsed Succesfully For Papua New Guinea
+2025-02-20 15:02:44,062 data for runs scored by each batsmen parsed successful! for Papua New Guinea
+2025-02-20 15:02:44,063 Data Parsed Succesfully For Papua New Guinea
+2025-02-20 15:02:44,065 Error fetching runs scored in each over and wickets fallen for Papua New Guinea
+2025-02-20 15:02:44,066 Succesfully found avg runs scored in death overs
+2025-02-20 15:02:44,113 Plotting Data Succesfully
+2025-02-20 15:02:44,206 Data Parsed Successfully for wicket taken by each bowler for Papua New Guinea
+2025-02-20 15:02:44,211 Succesfuuly found total number of dot balls for Papua New Guinea
+2025-02-20 15:02:44,211 Data plotting successful for dot balls for Papua New Guinea
+2025-02-20 15:02:44,299 Succesfully found split of wickets for Papua New Guinea
+2025-02-20 15:02:44,300 Data plotting succesful for wicket split for Papua New Guinea
+2025-02-20 15:02:47,121 Succesfully fetched total number of matches played and number of times bowled in death for Papua New Guinea
+2025-02-20 15:02:47,122 Succesfully fetched total number of times batted in death for Papua New Guinea
+2025-02-20 15:02:47,125 Succesfully found out out total runs scored in each over Papua New Guinea
+2025-02-20 15:02:47,126 Data Parsed Succesfully For Papua New Guinea
+2025-02-20 15:02:47,128 data for runs scored by each batsmen parsed successful! for Papua New Guinea
+2025-02-20 15:02:47,130 Data Parsed Succesfully For Papua New Guinea
+2025-02-20 15:02:47,135 Error fetching runs scored in each over and wickets fallen for Papua New Guinea
+2025-02-20 15:02:47,136 Succesfully found avg runs scored in death overs
+2025-02-20 15:02:47,169 Plotting Data Succesfully
+2025-02-20 15:02:47,265 Data Parsed Successfully for wicket taken by each bowler for Papua New Guinea
+2025-02-20 15:02:47,269 Succesfuuly found total number of dot balls for Papua New Guinea
+2025-02-20 15:02:47,269 Data plotting successful for dot balls for Papua New Guinea
+2025-02-20 15:02:47,385 Succesfully found split of wickets for Papua New Guinea
+2025-02-20 15:02:47,387 Data plotting succesful for wicket split for Papua New Guinea
+2025-02-20 15:02:49,875 Succesfully fetched total number of matches played and number of times bowled in death for Sri Lanka
+2025-02-20 15:02:49,877 Succesfully fetched total number of times batted in death for Sri Lanka
+2025-02-20 15:02:49,880 Succesfully found out out total runs scored in each over Sri Lanka
+2025-02-20 15:02:49,881 Data Parsed Succesfully For Sri Lanka
+2025-02-20 15:02:49,884 data for runs scored by each batsmen parsed successful! for Sri Lanka
+2025-02-20 15:02:49,885 Data Parsed Succesfully For Sri Lanka
+2025-02-20 15:02:49,887 Error fetching runs scored in each over and wickets fallen for Sri Lanka
+2025-02-20 15:02:49,888 Succesfully found avg runs scored in death overs
+2025-02-20 15:02:49,923 Plotting Data Succesfully
+2025-02-20 15:02:50,015 Data Parsed Successfully for wicket taken by each bowler for Sri Lanka
+2025-02-20 15:02:50,019 Succesfuuly found total number of dot balls for Sri Lanka
+2025-02-20 15:02:50,019 Data plotting successful for dot balls for Sri Lanka
+2025-02-20 15:02:50,094 Succesfully found split of wickets for Sri Lanka
+2025-02-20 15:02:50,095 Data plotting succesful for wicket split for Sri Lanka
