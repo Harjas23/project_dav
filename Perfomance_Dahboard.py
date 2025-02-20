@@ -212,14 +212,15 @@ try:
             if 15 not in bowling_stats['ball'].values:
                 bowling_stats.loc[len(bowling_stats.index)] = [15,0]
             if 16 not in bowling_stats['ball'].values:
-                bowling_stats.loc[len(bowling_stats.index)] = [16,1]
+                bowling_stats.loc[len(bowling_stats.index)] = [16,0]
             if 17 not in bowling_stats['ball'].values:
-                bowling_stats.loc[len(bowling_stats.index)] = [17,2]
+                bowling_stats.loc[len(bowling_stats.index)] = [17,0]
             if 18 not in bowling_stats['ball'].values:
-                bowling_stats.loc[len(bowling_stats.index)] = [18,3] 
+                bowling_stats.loc[len(bowling_stats.index)] = [18,0] 
             if 19 not in bowling_stats['ball'].values:
-                bowling_stats.loc[len(bowling_stats.index)] = [19,4]
-            bowling_stats['runs_off_bat']=bowling_stats['runs_off_bat'].fillna(0)  
+                bowling_stats.loc[len(bowling_stats.index)] = [19,0]
+            bowling_stats = bowling_stats.sort_values(by = 'ball')
+           
             
             bowling_stats = bowling_stats.rename(columns={'runs_off_bat':'dot balls'})
             bowling_stats[['dot balls']] = scaler.fit_transform(bowling_stats[['dot balls']]) #normalizing data to fit the curve
