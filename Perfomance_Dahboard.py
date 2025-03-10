@@ -174,10 +174,13 @@ try:
     col1,col2,=st.columns([50,50])
 
     with col1: #ALL BATTING VISUALIZATION GOES HERE
-        st.write('**Total Wickets Fallen**')
+        st.write('**Total Wickets Against Total Runs**')
         st.line_chart(batting_plot,x='ball',y=['wicket_type','runs'],x_label='overs',y_label='wickets fallen',color=["#FF0000", "#0000FF"])
+        st.write("**This visualization shows how wicket fallen between over 15-20 effcts runs scored**")
         st.plotly_chart(fig,use_container_width=True)
+        st.write("**This visualization shows phase wise runs i.e whether in each over runs scored increases or decreases**")
         st.plotly_chart(heatmap,use_container_width=True)
+        st.write("**This visualization explain contribution of each batsmen in over 15 - 20**")
     
     def bowling_wickets(team):
         try:
@@ -190,6 +193,7 @@ try:
             total_bowlers = len(wickets_taken['bowler'])
             st.write("**Wickets Taken in Death Overs by Bowlers**")
             st.bar_chart(data = wickets_taken, x = 'bowler',y = 'wicket_type', x_label = "Bowler", y_label = "Total Number Of Wickets Taken",color = colors[total_bowlers-1],use_container_width = True)
+            st.write('**This visualization explains contribution of bowlers in death overs in terms of wickets**')
             logger_success.info(f"Data Parsed Successfully for wicket taken by each bowler for {team}")
             
             
@@ -228,6 +232,7 @@ try:
             logger_success.info(f"Data plotting successful for dot balls for {team}")
             st.write("**Total Number of Dot Balls in Death Overs**")
             st.line_chart(data=bowling_stats, x = 'ball', y='dot balls', use_container_width = True, color = '#78eef5')
+            st.write('**This visualization shows dot ball progression in death i.e increasing or decreasing in each phase**')
 
             
         except:
@@ -249,6 +254,7 @@ try:
             wicket_split = px.pie(bowling_stats, values = 'count of dissmissal', names = 'wicket_type', title = 'Wicket Type Split', hole = 0.3,)
             wicket_split.update_traces(textposition='inside', textinfo='label', marker=dict(line=dict(color="black", width=2)))
             st.plotly_chart(wicket_split,use_container_width = True)
+            st.write('**This visualizatio makes you explain split of wicket type, for example if max split is for caught this proves opponent were trying to attack bowlers in death**')
 
         except:
             logger.error(f"No data found for wickets split of {team}")
